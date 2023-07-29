@@ -1,14 +1,13 @@
 import * as React from "react";
 import { useEffect, useRef, useState, useCallback } from "react";
+import { Item, ItemParamsProps } from "./demo";
 import "./index.less";
-type Item = {
-  num: number;
-};
+
 interface Props {
   itemHeight: number;
   boxHeight: number;
   data: Array<Item>;
-  children: React.ReactNode;
+  children: ({ style, index, item }: ItemParamsProps) => React.ReactNode;
 }
 const FixedHeight = ({ itemHeight, data, boxHeight, children }: Props) => {
   const contenHeight = data.length * itemHeight;

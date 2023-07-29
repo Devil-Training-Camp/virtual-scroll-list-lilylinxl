@@ -1,7 +1,7 @@
 import * as React from "react";
 import { forwardRef, useState } from "react";
 import { flushSync } from "react-dom";
-import { binarySearch } from "../util/index";
+import { binarySearch } from "../../util/index";
 interface Props {
   containerHeight: number;
   getItemHeight: (index: number) => number;

@@ -34,7 +34,7 @@ function Item({ index, data, setHeight }: ItemProps) {
   );
 }
 
-export default function App() {
+export default function VariableSizeListDemo() {
   const [list] = useState(
     new Array(1000).fill(0).map(() => faker.lorem.paragraph())
   );
@@ -59,7 +59,7 @@ export default function App() {
 
   return (
     <>
-      列表项高度动态 - 虚拟列表实现
+      <h4>列表项高度动态 - 虚拟列表实现</h4>
       <VariableSizeList
         ref={listRef}
         containerHeight={300}

@@ -1,11 +1,12 @@
 import "./App.css";
 import * as React from "react";
-import VariableSizeList from "./VariableSizeList/demo";
-
+import VariableSizeListDemo from "./components/VariableSizeList/demo";
+import FixedHeightDemo from "./components/FixedHeight/demo";
 function App() {
   return (
     <>
-      <VariableSizeList />
+      <FixedHeightDemo />
+      <VariableSizeListDemo />
     </>
   );
 }
