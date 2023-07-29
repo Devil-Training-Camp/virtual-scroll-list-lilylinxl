@@ -1,7 +1,9 @@
 import * as React from "react";
 import { useEffect, useRef, useState, useCallback } from "react";
-import { Item } from "../App";
 import "./index.less";
+type Item = {
+  num: number;
+};
 interface Props {
   itemHeight: number;
   boxHeight: number;
